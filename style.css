@@ -56,9 +56,10 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 260px 2fr;
-    grid-template-rows: 1fr 4fr; /**1st row may be px too*/   
+    grid-template-rows: 160px 4fr;   
 }
 
+/*********************   Side Bar   *****************************/
 .side-bar{
     background-color: #14171A;
     color: white;
@@ -92,18 +93,90 @@ li{
     font-size: 18px;
 }
 
-
-
+/*********************   Header   *****************************/
 .header{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(2,1fr);   
+    display: flex;
+    flex-wrap: wrap;
+    color:#14171A;   
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 8px 6px -6px #AAB8C2;
 }
+
+.flexHeader1{
+    display: flex;
+    align-items: center;
+}
+
+img[alt="search-icon"]{
+    max-width: 22px;
+    max-height: 22px;
+    margin: 0px 20px 0px 50px; 
+}
+
+input{
+    border: 1px solid #E1E8ED;
+    background-color: #E1E8ED;
+    border-radius: 12px;  
+    width: 40vw;
+    padding:4px;
+    margin-right: 250px;
+}
+
+img[ alt="person-icon-first"]{
+    max-width: 50px;
+    max-height: 50px;
+    margin:0 20px 0 20px;
+}
+
+.maName{
+    margin-right: 150px;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.flexHeader2{
+    display: flex;
+    align-items: center;
+}
+
+img[ alt="person-icon-last"]{
+    max-width: 75px;
+    max-height: 75px;
+    margin: 0px 20px 0px 50px;
+}
+
+.greeting-1strow{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.greeting-2ndrow{
+    font-size: 24px;
+    white-space: nowrap;
+    text-overflow: clip;
+    margin-right: 520px;
+}
+
+button{
+    border: 1px solid #14171A;
+    background-color: #14171A;
+    color: white;
+    border-radius: 12px;
+    padding:7px 20px 7px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+
 
 .main-content{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 2;
+    background-color: #F5F8FA; 
+   margin-top: 7px; 
 }
 
 .projects{
