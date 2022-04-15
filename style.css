@@ -100,7 +100,7 @@ li{
     color:#14171A;   
     font-weight: bold;
     font-size: 18px;
-    box-shadow: 0 8px 6px -6px #AAB8C2;
+    box-shadow: 0 6px 8px -6px #14171A;
 }
 
 .flexHeader1{
@@ -126,7 +126,7 @@ input{
 img[ alt="person-icon-first"]{
     max-width: 50px;
     max-height: 50px;
-    margin:0 20px 0 20px;
+    margin:0 20px;
 }
 
 .maName{
@@ -169,16 +169,105 @@ button{
     margin-right: 30px;
 }
 
-
-
+/*********************   Main Content   *****************************/
 .main-content{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 2;
-    background-color: #F5F8FA; 
-   margin-top: 7px; 
+    grid-template-columns: 3fr 1fr; 
+    grid-template-rows: 1.3fr 1fr;
+    background-color: #E1E8ED; 
+    margin-top: 5px; 
+    font-weight: bold;
+    font-size: 18px;
+    color: #14171A;
+}
+
+.position1{
+    position: absolute;
+    top: -30px;
 }
 
 .projects{
     grid-row:1/3;
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;    
+    grid-template-rows: 1fr 20px 1fr 20px 1fr;
+    margin: 50px 20px;
+    position: relative;
+    background-color: #E1E8ED;
 }
+
+.cards-first{
+    grid-area: 1 / 1 / 2 / 2;   
+}
+
+.cards-second{
+    grid-area: 1 / 3 / 2 / 4;   
+}
+
+.cards-third{
+    grid-area: 3 / 1 / 4 / 2;   
+}
+
+.cards-fourth{
+    grid-area: 3 / 3 / 4 / 4;   
+}
+
+.cards-fifth{
+    grid-area: 5 / 1 / 6 / 2;   
+}
+
+.cards-sixth{
+    grid-area: 5 / 3 / 6 / 4;    
+}
+
+div[class*=cards]{
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color:white;
+    display: grid;
+    grid-template-rows: 30px 0.5fr 1.5fr 0.5fr 30px;
+    grid-template-columns: 30px 2fr repeat(4,0.5fr);
+    align-items: center;
+}
+
+.title{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.project-text{
+    grid-area: 3 / 2 / 4 / 6;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+img[alt*=retweet-icon-project],
+img[alt*=message-icon-project]{
+    grid-area: 4 / 3 / 5 / 4;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+img[alt*=retweet-icon-project]{
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+img[alt*=like-icon-project]{
+    grid-area: 4 / 5 / 5 / 6;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+img[alt*=share-icon-project]{
+    grid-area: 4 / 6 / 5 / 7;
+    max-width: 35px;
+    max-height: 35px;
+}
+
+
+/**
+   2. html da opravish deto dobavq lorem
+   4. box shadow na cards
+   
+   7. responsive text in cards - rem
+
+    2./
